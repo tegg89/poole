@@ -5,7 +5,7 @@ permalink:           pretty
 title:               Tegg Sung
 tagline:             Deep learning researcher
 url:                 http://tegg89.github.io
-paginate:            1
+paginate:            5
 baseurl:             ""
 
 # Assets
