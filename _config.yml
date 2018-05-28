@@ -31,6 +31,7 @@ github:
 gems:
   - jekyll-paginate
   - jekyll-gist
+  - kramdown
 
 # Addition
 markdown: kramdown

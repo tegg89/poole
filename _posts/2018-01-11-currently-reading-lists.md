@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Currently reading lists
+tags: [readinglist, info]
+comments: true
+mathjax: true
 ---
 
 Everyday I read papers related to deep reinforcement learning and gaussian processes which are my interested research topics. Those gave me research inspirations and thoughts. Also I check reddit and twitter for the state-of-the-art research papers.

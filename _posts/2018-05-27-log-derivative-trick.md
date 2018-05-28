@@ -24,7 +24,7 @@ $$\begin{align}
 
 
 $$
-    \nabla_\theta\mathbb{E}_{p(z;\theta)}[f(z)] = \nabla_\theta\int p(z;\theta)f(z)dz
+    \nabla_\theta\mathbb{E}_{p(z;\theta)}[f(z)] = \nabla_\theta\int p(z;\theta)\;f(z)dz
 $$
 
 
@@ -33,10 +33,10 @@ $$
   - Value function and policy learning in RL
   - Derivative pricing in computational finance
   - Inventory control in operations research
-- The gradient of expectation of function $f$ is difficult to compute, because the integral is typically unknown and the parameters $\theta$, with respect to which we are computing the gradient, are of the distribution $p(z;\theta)$.
+- The gradient of expectation of function $f$ is difficult to compute, because the integral is typically unknown and the parameters $$\theta$$, with respect to which we are computing the gradient, are of the distribution $$p(z;\theta)$$.
 - Moreover, we (perhaps) want to compute this gradient when the function $f$ is not differentiable.
 - Score function is an unbuased estimator of the gradient.
-  - The function $f(z)$ need not be differentiable. Instead, we should be able to evaluate it or observe its value for a given $z$.
+  - The function $$f(z)$$ need not be differentiable. Instead, we should be able to evaluate it or observe its value for a given $$z$$.
 
 
 $$
@@ -68,15 +68,15 @@ $$\begin{align}
 ## Familes of Stochastic Estimators
 
 $$
-    PD:\qquad \nabla_\theta\mathbb{E}_{p(z;\theta)}[f(z)] = \mathbb{E}_{p(\epsilon)}[\nabla_\theta f(g(\epsilon,\theta))]
+    PD:\quad \nabla_\theta\mathbb{E}_{p(z;\theta)}[f(z)] = \mathbb{E}_{p(\epsilon)}[\nabla_\theta f(g(\epsilon,\theta))]
 $$
 $$
-    SF:\qquad\nabla_\theta\mathbb{E}_{p(z;\theta)}[f(z)] = \mathbb{E}_{p(z;\theta)}[f(z)\nabla_\theta log\;p(z;\theta)]
+    SF:\quad\nabla_\theta\mathbb{E}_{p(z;\theta)}[f(z)] = \mathbb{E}_{p(z;\theta)}[f(z)\nabla_\theta log\;p(z;\theta)]
 $$
 
 
 - Approaches
   - Differentiate the function f, using pathwise derivatives, if it is differentiable
-  - Differentiate the density $p(z)$, using the score function
+  - Differentiate the density $$p(z)$$, using the score function
 - Using stochastic computation graph, PD and SF can be combined (providing the lowest variance)
 
