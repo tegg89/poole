@@ -3,8 +3,6 @@ layout: post
 title: Structure discovery in nonparametric regression through compositional kernel search
 ---
 
-tags: [papers, reading, review]
-
 This paper is related to Gaussian processes, especially in searching kernels. The core idea is that complicated kernels can be composited with commonly used kernel families, the squared exponential, periodic, linear, and rational quadratic.
 
 - Kernels used in Gaussian processes are positive semidefinite ($x^TAx > 0$) which means they are closed under addition and multiplication operators.
