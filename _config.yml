@@ -20,6 +20,7 @@ author:
   name:              Tegg Sung
   url:               https://twitter.com/teggme
   email:             tegg89@gmail.com
+  github:            https://github.com/tegg89
 
 # Custom vars
 version:             2.0.0
@@ -30,3 +31,13 @@ github:
 gems:
   - jekyll-paginate
   - jekyll-gist
+
+# Addition
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6

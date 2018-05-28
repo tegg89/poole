@@ -1,6 +1,9 @@
 ---
 layout: post
 title : Log Derivative Trick
+tags: [blog, review]
+comments: true
+mathjax: true
 ---
 
 - Alternating between normalized-probabilities and log-probabilities
